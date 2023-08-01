@@ -1,0 +1,9 @@
+
+namespace Example
+{
+    runtimeclass Class
+    {
+        Class();
+        void Method();
+    }
+}
