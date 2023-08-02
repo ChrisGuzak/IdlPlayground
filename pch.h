@@ -1,2 +1,5 @@
 #pragma once
-#include <wil/winrt.h>
+#include <wil/cppwinrt.h>
+#include <wil/stl.h>
+#include <wil/com.h>
+#include <wil/resource.h>
