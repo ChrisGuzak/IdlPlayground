@@ -29,16 +29,17 @@ namespace IdlPlayground
             e.Method();
         }
 
-        TEST_METHOD(AsyncMethodDemoLaunchUri)
+        TEST_METHOD(UseAsyncMethodsSynchronously)
         {
-            using namespace winrt::Windows::System;
-            using namespace winrt::Windows::Foundation;
-
-            [&]() -> winrt::fire_and_forget
+            std::thread([&]()
             {
+                using namespace winrt::Windows::System;
+                using namespace winrt::Windows::Foundation;
+
                 auto uri = Uri(L"http://www.msn.com");
-                co_await Launcher::LaunchUriAsync(uri);
-            }();
+                auto r = Launcher::LaunchUriAsync(uri).get();;
+            }).join();
         }
+
 	};
 }
