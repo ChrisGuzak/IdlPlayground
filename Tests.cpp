@@ -6,6 +6,8 @@ namespace cpp_unit
 	using namespace Microsoft::VisualStudio::CppUnitTestFramework;
 }
 
+winrt::Example::Class make_example();
+
 namespace IdlPlayground
 {
 	TEST_CLASS(TestClass)
@@ -20,6 +22,12 @@ namespace IdlPlayground
 			winrt::Example::Class testClass;
 			testClass.Method();
 		}
+
+        TEST_METHOD(CallMake)
+        {
+            auto e = make_example();
+            e.Method();
+        }
 
         TEST_METHOD(AsyncMethodDemoLaunchUri)
         {

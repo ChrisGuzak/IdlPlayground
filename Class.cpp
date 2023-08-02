@@ -10,7 +10,7 @@ namespace winrt::Example::implementation
     }
 }
 
-winrt::Example::Class make_bar()
+winrt::Example::Class make_example()
 {
     return winrt::make<winrt::Example::implementation::Class>();
 }
