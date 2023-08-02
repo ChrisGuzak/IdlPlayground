@@ -40,6 +40,5 @@ namespace IdlPlayground
                 auto r = Launcher::LaunchUriAsync(uri).get();;
             }).join();
         }
-
 	};
 }
