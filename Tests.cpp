@@ -1,17 +1,18 @@
 #include "pch.h"
 #include <winrt/Example.h>
+#include <wil/filesystem.h>
 
 namespace cpp_unit
 {
-	using namespace Microsoft::VisualStudio::CppUnitTestFramework;
+    using namespace Microsoft::VisualStudio::CppUnitTestFramework;
 }
 
 winrt::Example::Class make_example();
 
 namespace IdlPlayground
 {
-	TEST_CLASS(TestClass)
-	{
+    TEST_CLASS(TestClass)
+    {
         TEST_METHOD(TestMethod)
         {
             cpp_unit::Assert::IsTrue(true);
@@ -40,5 +41,5 @@ namespace IdlPlayground
                 auto r = Launcher::LaunchUriAsync(uri).get();;
             }).join();
         }
-	};
+    };
 }
