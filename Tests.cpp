@@ -17,11 +17,11 @@ namespace IdlPlayground
             cpp_unit::Assert::IsTrue(true);
         }
 
-		TEST_METHOD(CreateAndCallWinRtObject)
-		{
-			winrt::Example::Class testClass;
-			testClass.Method();
-		}
+        TEST_METHOD(CreateAndCallWinRtObject)
+        {
+            winrt::Example::Class testClass;
+            testClass.Method();
+        }
 
         TEST_METHOD(CallMake)
         {
