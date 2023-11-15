@@ -9,37 +9,34 @@ namespace cpp_unit
 
 winrt::Example::Class make_example();
 
-namespace IdlPlayground
+TEST_CLASS(TestClass)
 {
-    TEST_CLASS(TestClass)
+    TEST_METHOD(TestMethod)
     {
-        TEST_METHOD(TestMethod)
-        {
-            cpp_unit::Assert::IsTrue(true);
-        }
+        cpp_unit::Assert::IsTrue(true);
+    }
 
-        TEST_METHOD(CreateAndCallWinRtObject)
-        {
-            winrt::Example::Class testClass;
-            testClass.Method();
-        }
+    TEST_METHOD(CreateAndCallWinRtObject)
+    {
+        winrt::Example::Class testClass;
+        testClass.Method();
+    }
 
-        TEST_METHOD(CallMake)
-        {
-            auto e = make_example();
-            e.Method();
-        }
+    TEST_METHOD(CallMake)
+    {
+        auto e = make_example();
+        e.Method();
+    }
 
-        TEST_METHOD(UseAsyncMethodsSynchronously)
+    TEST_METHOD(UseAsyncMethodsSynchronously)
+    {
+        std::thread([&]()
         {
-            std::thread([&]()
-            {
-                using namespace winrt::Windows::System;
-                using namespace winrt::Windows::Foundation;
+            using namespace winrt::Windows::System;
+            using namespace winrt::Windows::Foundation;
 
-                auto uri = Uri(L"http://www.msn.com");
-                auto r = Launcher::LaunchUriAsync(uri).get();;
-            }).join();
-        }
-    };
-}
+            auto uri = Uri(L"http://www.msn.com");
+            auto r = Launcher::LaunchUriAsync(uri).get();;
+        }).join();
+    }
+};
