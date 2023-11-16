@@ -22,6 +22,11 @@ TEST_CLASS(TestClass)
         testClass.Method();
     }
 
+    TEST_METHOD(Fail)
+    {
+        cpp_unit::Assert::IsTrue(false);
+    }
+
     TEST_METHOD(CallMake)
     {
         auto e = make_example();
