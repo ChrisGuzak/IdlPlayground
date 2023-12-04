@@ -7,7 +7,7 @@ A C++ project for creating WinRT based designs.
 * This uses a C++ VS Test project to provide **code examples**.
 * It enables creation and implementation of **WinRT Interface Definition Language** (MIDL) **types**.
 * Show **code examples**, the currency of API design.
-* Enable **executing** the implementation and 
+* Enables **executing** the implementation and the example.
 
 ### Example
 
@@ -41,14 +41,15 @@ from the context where it is needed.
 
 #### Create a project and get it building
 
-Visual Studio offers templates for projects, this this is often a best first step.
-
-After creating the project consider cleaning it up as the default templates can be simplified.
+* Visual Studio offers templates for projects, this this is often a best first step.
+* After creating the project consider cleaning it up as the default templates can be simplified.
 Fewer files, folders and a structure that makes working int the code simple.
+* Add the dependent libraries as NuGet packages or use vcpkg. For Windows code
+wil is essential. Use other libraries make production and consumption of designs
+simppler.
+* Pick descriptive names and a README.md to introduce the project.
 
-Pick descriptive names and a README.md to introduce the project.
-
-**Push to remote!** 
+* **Push to remote!** 
 
 ### Using the Project
 
