@@ -23,8 +23,9 @@ TEST_CLASS(DemonstrateSystemLauncher)
 };
 ```
 
-### Aditional Tools
-* Install the [Visual Studio IDL](https://marketplace.visualstudio.com/items?itemName=MadsKristensen.idl) extension.
+### WinRT IDL file Extension
+The [WinRT Tools for C++](https://marketplace.visualstudio.com/items?itemName=MadsKristensen.MIDL) extension improves the
+.idl file editing expereince and is highly recommended.
 
 ## Secondary Goal - Demonstrate Work in Isolation
 
