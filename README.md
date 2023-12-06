@@ -23,6 +23,9 @@ TEST_CLASS(DemonstrateSystemLauncher)
 };
 ```
 
+### Aditional Tools
+* Install the [Visual Studio IDL](https://marketplace.visualstudio.com/items?itemName=MadsKristensen.idl) extension.
+
 ## Secondary Goal - Demonstrate Work in Isolation
 
 Independent from the primary goal, this sample demonstrate the
