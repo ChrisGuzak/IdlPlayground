@@ -105,3 +105,7 @@ encountered issues of your team or the community that you operate in.
 * Learn about the coding environment you are helping on deepest degree.
 * Become fluent through practice.
 * Contribute to the success of others.
+
+## Acks
+
+For rina
