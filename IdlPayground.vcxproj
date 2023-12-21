@@ -69,6 +69,7 @@
     <ClInclude Include="Class.h" />
     <ClInclude Include="pch.h" />
     <None Include="README.md" />
+    <None Include="WorkInIsolationScript.md" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

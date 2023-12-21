@@ -4,16 +4,35 @@
 
 Work in isolation is a technique I use to
 
-keep coding environments near by so I can
+quickly produce example code for my team mates.
 
-quickly produce example code for my communities
-and team mates.
+I keep my coding environment near by so I can
+create proof of concept code snippets, using
+a specific technique, library function or api.
 
-this technique also produces the ideal environment for
-writing new code.
+being able to produce code that "compiles" and even
+"run" is often key to helping someone make progress
+on their work.
 
-inner loop times in a few seconds and
-the comforts of test driven development
+This approach helps avoid suggesting solutions that
+are not workable or that mis-understand the problem.
+
+### Flow
+
+The isolated environment is ideal for writing new code.
+
+The inner loop times are seconds and
+
+the approach creates the comfort of test driven development
+
+the ability to execute coding workflows freely
+
+write code, run tests, and repeat that loop to make steady progress through
+the problem that you are solving.
+
+and the comforting wall of green.
+
+commit and push to share the examples with others.
 
 ## Setup
 
@@ -35,7 +54,5 @@ Wall of Green
 
 Commit and push
 
-
-
-
+## Breaking dependencies
 

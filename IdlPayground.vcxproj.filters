@@ -24,6 +24,7 @@
       <Filter>build</Filter>
     </None>
     <None Include="README.md" />
+    <None Include="WorkInIsolationScript.md" />
   </ItemGroup>
   <ItemGroup>
     <Midl Include="Example.idl" />
