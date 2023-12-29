@@ -25,7 +25,7 @@ TEST_CLASS(DemonstrateSystemLauncher)
 
 ### WinRT IDL file Extension
 The [WinRT Tools for C++](https://marketplace.visualstudio.com/items?itemName=MadsKristensen.MIDL) extension improves the
-.idl file editing expereince and is highly recommended.
+.idl file editing experience and is highly recommended.
 
 ## Secondary Goal - Demonstrate Work in Isolation
 
@@ -107,6 +107,6 @@ encountered issues of your team or the community that you operate in.
 * Become fluent through practice.
 * Contribute to the success of others.
 
-## Acks
+## Acknowledgements
 
-For rina
+For rina and others who asked me to share what I know.
