@@ -24,13 +24,14 @@ TEST_CLASS(DemonstrateSystemLauncher)
 ```
 
 ### WinRT IDL file Extension
+
 The [WinRT Tools for C++](https://marketplace.visualstudio.com/items?itemName=MadsKristensen.MIDL) extension improves the
 .idl file editing experience and is highly recommended.
 
 ## Secondary Goal - Demonstrate Work in Isolation
 
 Independent from the primary goal, this sample demonstrate the
-**Work In Isolation** technique. This is applicable to any language or 
+**Work In Isolation** technique. This is applicable to any language or
 environment, this case shows C++/WinRT/Visual Studio IDE/github as the example.
 
 ### Getting Started
@@ -109,4 +110,4 @@ encountered issues of your team or the community that you operate in.
 
 ## Acknowledgements
 
-For rina and others who asked me to share what I know.
+For Marina and others who asked me to share what I know.
