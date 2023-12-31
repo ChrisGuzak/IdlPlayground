@@ -58,12 +58,5 @@ Failed test workflows
 
 Using git to make incremental progress
 
-## Satisfying dependencies
+Satisfying dependencies
 
-Use package managers to access useful libraries and tools needed by the code
-being created.
-
-### Working outside os.2020
-
-For the Windows operating system developers, see [this description](https://dev.azure.com/chrisguzak/Projects/_git/ChrisGuzakWork?path=/ChrisGuzak/Docs/OS.2020Dependencies.md) for details on how to
-apply the work in isolation technique to work that depends on internal Windows APIs.
