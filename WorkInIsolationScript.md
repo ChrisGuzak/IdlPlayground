@@ -25,7 +25,7 @@ The inner loop times are seconds and
 
 the approach creates the comfort of test driven development
 
-the ability to execute coding workflows freely
+it enables the ability to execute coding workflows freely
 
 write code, run tests, and repeat that loop to make steady progress through
 the problem that you are solving.
