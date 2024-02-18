@@ -2,10 +2,7 @@
 #include <winrt/Example.h>
 #include <wil/filesystem.h>
 
-namespace cpp_unit
-{
-    using namespace Microsoft::VisualStudio::CppUnitTestFramework;
-}
+namespace cpp_unit = Microsoft::VisualStudio::CppUnitTestFramework;
 
 winrt::Example::Class make_example();
 
@@ -35,13 +32,19 @@ TEST_CLASS(TestClass)
 
     TEST_METHOD(UseAsyncMethodsSynchronously)
     {
-        std::thread([&]()
-        {
-            using namespace winrt::Windows::System;
-            using namespace winrt::Windows::Foundation;
+        using namespace winrt::Windows::System;
+        using namespace winrt::Windows::Foundation;
 
-            auto uri = Uri(L"http://www.msn.com");
-            auto r = Launcher::LaunchUriAsync(uri).get();;
-        }).join();
+        auto uri = Uri(L"http://www.msn.com");
+        auto r = Launcher::LaunchUriAsync(uri).get();;
+    }
+
+    TEST_METHOD(VerifyRunSettingsFileConfiguresMta)
+    {
+        APTTYPE aptType{};
+        APTTYPEQUALIFIER aptTypeQualifier{};
+        THROW_IF_FAILED(CoGetApartmentType(&aptType, &aptTypeQualifier));
+        // Verify test.runsettings is working
+        cpp_unit::Assert::IsTrue(aptType == APTTYPE_MTA);
     }
 };

@@ -1,0 +1,6 @@
+<RunSettings>
+    <RunConfiguration>
+        <ExecutionThreadApartmentState>MTA</ExecutionThreadApartmentState>
+        <TreatNoTestsAsError>true</TreatNoTestsAsError>
+    </RunConfiguration>
+</RunSettings>
